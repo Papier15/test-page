@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Test</title>
+    <style>
+        body {
+            display: flex;               /* centre le texte horizontalement et verticalement */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;               /* prend toute la hauteur de la fenêtre */
+            background-color: #222;      /* fond sombre */
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 100px;            /* texte très gros */
+            background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* gradient sur le texte */
+            animation: rainbow 3s infinite linear; /* animation de couleur */
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>TEST</h1>
+</body>
+</html>
